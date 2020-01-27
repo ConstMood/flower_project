@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+i {
+  color: #2e856e;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "WildFlowerBold";
+  src: url("../fonts/wildflower/WildFlowerBold.otf");
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  border-bottom: #2e856e solid 2px;
+}
+
+#header_container {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../images/fdb.jpg");
+  background-size: cover;
+
+  text-align: center;
+}
+
+#header_title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header_title h1 {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  background-color: #2e856e9c;
+
+  border: 8px dotted white;
+
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+  color: white;
+}
+
+#desktop_logo h1 {
+  margin-top: 5px;
+  margin-left: 20px;
+
+  font-family: "WildFlowerBold";
+  font-size: 50px;
+
+  color: #2e856e;
+}
+
+#desktop_menu {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#desktop_buttons {
+  display: flex;
+
+  margin: 15px;
+
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#desktop_buttons a {
+  margin: 5px;
+  color: #2e856e !important;
+}
+
+#about_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#about_title h1 {
+  margin: 30px;
+
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 60px;
+
+  color: #2e856e;
+}
+
+#about_icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#about_icons i {
+  margin: 30px;
+  font-size: 35px;
+
+  color: #2e856eaa;
+}
+
+#about_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#about_content_1 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+#about_content_2 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+#about_content_3 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+#slogan_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+  background-image: url("../images/bg3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  text-align: center;
+}
+
+#slogan_container h1 {
+  width: 1000px;
+  padding: 50px;
+
+  font-family: "Dancing Script", cursive;
+
+  background-color: #2e856e9a;
+  border: white dotted 8px;
+  color: white;
+}
+
+#team_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#team_title h1 {
+  margin: 30px;
+
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 60px;
+
+  color: #2e856e;
+}
+
+#team_users {
+  display: flex;
+  flex-direction: row;
+}
+
+#team_users h2 {
+    margin-top: 25px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+
+#team_users h3 {
+    
+}
+
+#team_users div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#team_container img {
+  width: 250px;
+  height: 250px;
+
+  border: #2e856e solid 7px;
+  border-radius: 200px;
+}
+
+@media (max-width: 750px) {
+  #desktop_container {
+    position: left -300px;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  #mobile_menu {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  #mobile_logo h1 {
+    margin-top: 5px;
+    margin-left: 20px;
+
+    font-size: 45px;
+    font-family: "WildFlowerBold";
+
+    color: #2e856e;
+  }
+
+  #mobile_buttons {
+    margin: 15px;
+
+    text-decoration: none;
+  }
+
+  #mobile_button {
+    color: #2e856e !important;
+    font-size: 30px;
+  }
+
+  .hidden {
+    display: inherit;
+  }
+}
