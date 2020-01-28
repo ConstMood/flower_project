@@ -194,13 +194,13 @@ h2 {
 }
 
 #team_users h2 {
-    margin-top: 25px;
+  margin-top: 25px;
   font-weight: bold;
   font-family: "Dancing Script", cursive;
 }
 
 #team_users h3 {
-    
+  font-style: italic;
 }
 
 #team_users div {
@@ -216,6 +216,89 @@ h2 {
 
   border: #2e856e solid 7px;
   border-radius: 200px;
+}
+
+.team_social {
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+
+  bottom: 235px;
+}
+
+.team_social {
+  display: flex;
+  flex-direction: row !important;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #2e856e92;
+  position: absolute;
+}
+
+.team_social i {
+  margin: 15px;
+  color: white;
+  font-size: 30px;
+}
+
+.team_social:hover {
+  opacity: 1;
+}
+
+#slider_container {
+  width: 100vw;
+  height: 50vh;
+
+  background-image: url("../images/bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.glide img {
+  width: 300px;
+  height: 300px;
+}
+
+#quams_container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quams_title h1 {
+  margin: 30px;
+
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 60px;
+
+  color: #2e856e;
+}
+
+#quams_container img {
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: #2e856e;
+}
+
+footer p {
+  width: 200px;
+  border: white dotted 4px;
+  padding: 15px;
+  color: white;
+
+  text-align: center;
+  font-size: 35px;
 }
 
 @media (max-width: 750px) {
